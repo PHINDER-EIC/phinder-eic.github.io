@@ -1,2 +1,14 @@
-# No emacs backup files
+# IDEs
+.idea/
 *~
+env.example
+# Hugo
+resources/
+public/
+jsconfig.json
+node_modules/
+.hugo_build.lock
+.gitmodules
+tmp/
+hugo_stats.json
+.DS_Store

@@ -1,0 +1,10 @@
+/* Light mode (default) */
+.hero-media img {
+  content: url("/media/phinder_logo.png");
+}
+
+/* Dark mode */
+/* Dark mode logo swap */
+body.dark .hero-media img {
+  content: url("/media/phinder_logo_white.png");
+}
