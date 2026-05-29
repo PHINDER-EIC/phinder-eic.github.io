@@ -8,3 +8,16 @@
 body.dark .hero-media img {
   content: url("/media/phinder_logo_white.png");
 }
+
+/* Set your new custom velvet background */
+html, body, :root, body.dark, [data-theme="dark"] {
+  background-color: #3C1E4C !important; /* <--- Paste your chosen hex code here */
+  background: #3C1E4C !important;
+}
+
+body.dark {
+  #main-wrapper, #content, main, section, article, nav, .navbar, .page-body, .universal-wrapper, .site-footer {
+    background-color: #3C1E4C !important; /* <--- Paste your chosen hex code here */
+    background: #3C1E4C !important;
+  }
+}
