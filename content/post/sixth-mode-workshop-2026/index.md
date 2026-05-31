@@ -1,5 +1,5 @@
 ---
-title: Sixth MODE Workshop Announced for June 2025
+title: Sixth MODE Workshop Announced for June 2026
 summary: The Sixth MODE Workshop on Differentiable Programming will take place at OAC (Kolymbari, Crete) on Sept 1–7, 2026.
 date: 2026-05-07
 authors:
