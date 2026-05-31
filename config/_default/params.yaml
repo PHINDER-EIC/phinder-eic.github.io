@@ -48,7 +48,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} - PHINDER Consortium. Funded by the European Union under Grant Agreement No. 101258353. <center><img src="media/eic_image.png" alt="EIC funding" width="320"></center> <br/>Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Innovation Council and SMEs Executive Agency (EISMEA). Neither the European Union nor EISMEA can be held responsible for them.'
+    notice: '© {year} - PHINDER Consortium. Funded by the European Union under Grant Agreement No. 101258353. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Innovation Council and SMEs Executive Agency (EISMEA). Neither the European Union nor EISMEA can be held responsible for them. <center><img src="media/eic_image.png" alt="EIC funding" width="320"></center>'
     license:
       enable: false
       allow_derivatives: false
