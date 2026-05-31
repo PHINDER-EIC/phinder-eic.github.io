@@ -48,7 +48,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} - PHINDER Consortium. Funded by the European Union under Grant Agreement No. 101258353. <center><img src="media/eic_image.png" alt="EIC funding" width="160"></center>'
+    notice: '© {year} - PHINDER Consortium. Funded by the European Union under Grant Agreement No. 101258353. <center><img src="media/eic_image.png" alt="EIC funding" width="320"></center>'
     license:
       enable: false
       allow_derivatives: false
