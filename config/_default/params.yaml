@@ -48,7 +48,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} - PHINDER Consortium.'
+    notice: '© {year} - PHINDER Consortium. Funded by the European Union under Grant Agreement No. 101258353.”'
     license:
       enable: false
       allow_derivatives: false
