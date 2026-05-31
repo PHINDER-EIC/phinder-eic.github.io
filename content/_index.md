@@ -24,7 +24,7 @@ sections:
 
         This is enabled by advancing the state of the art in optoelectronic algorithm-hardware co-design and multi-scale heterogeneous integration. This will unlock a disruptive paradigm shift in high-resolution sensing and imaging, targeting a 100-fold energy efficiency enhancement, sub-nanosecond latency, and unprecedented spatiotemporal resolution. Groundbreaking chip developments will be closely aligned with applications in three diverse exemplary areas relating to 5D (energy, time, x-y-z position) imaging particle detectors, proton therapy, and adaptive chemical process control.
 
-        The above program is supported by the European Union as an EIC Pathfinder Open project (2026-20230) under <a href="https://cordis.europa.eu/project/id/101258353">Grant Agreement ID 101258353</a>.
+        The above program is supported by the European Union as an EIC Pathfinder Open project (2026-2030) under <a href="https://cordis.europa.eu/project/id/101258353">Grant Agreement ID 101258353</a>.
 
           <font size=2>
         <p style="color: #2E64FE;">
