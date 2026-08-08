@@ -7,9 +7,9 @@ weight: 5
 role: "Principal Investigator"
 role_rank: 1
 organizations:
-- name: "INFN and Università of Padova"
-  url: ""
-bio: ""
+- name: "INFN, Sezione di Padova"
+  url: "https://userswww.pd.infn.it/%7Edorigo/index.html"
+bio: "Tommaso Dorigo is an experimental particle physics. His recent research lays at the intersection of Artificial Intelligence, Co-design of experiments, and neuromorphic computing."
 interests: []
 education:
   courses: []
