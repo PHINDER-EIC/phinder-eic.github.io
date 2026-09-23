@@ -12,3 +12,6 @@ node_modules/
 tmp/
 hugo_stats.json
 .DS_Store
+
+# Local development tools and caches
+.local-dev/

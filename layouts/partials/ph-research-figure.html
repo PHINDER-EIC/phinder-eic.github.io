@@ -1,0 +1,5 @@
+{{ $f := index site.Data.research_figures . }}
+<figure class="ph-research-figure ph-research-figure--{{ $f.kind }}">
+  <a class="ph-figure-image-link" href="{{ $f.image }}" aria-label="View full-size image: {{ $f.title }}"><img src="{{ $f.image }}" alt="{{ $f.alt }}" width="{{ $f.width }}" height="{{ $f.height }}" loading="lazy"></a>
+  <figcaption><p>{{ $f.caption }} <a href="{{ $f.image }}">View full size ↗</a></p><p class="ph-figure-credit">{{ $f.credit }} <a href="{{ $f.source }}">{{ $f.paper }}</a>{{ with $f.license }} · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>{{ end }}{{ with $f.original }} · <a href="{{ . }}">Original figure</a>{{ end }}</p></figcaption>
+</figure>

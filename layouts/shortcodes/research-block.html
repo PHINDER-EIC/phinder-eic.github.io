@@ -1,0 +1,4 @@
+<section class="ph-research-block{{ with .Get "figure" }} ph-research-block--illustrated{{ end }}">
+  <div class="ph-research-copy">{{ with .Get "label" }}<p class="ph-eyebrow">{{ . }}</p>{{ end }}{{ .Inner | markdownify }}</div>
+  {{ with .Get "figure" }}{{ partial "ph-research-figure" . }}{{ end }}
+</section>

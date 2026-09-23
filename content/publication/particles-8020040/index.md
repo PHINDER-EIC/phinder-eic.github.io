@@ -1,4 +1,5 @@
 ---
+summary: "A spiking neural network learns to identify charged-particle trajectories amid noise, supporting event-driven detector processing."
 title: Unsupervised Particle Tracking with Neuromorphic Computing
 authors:
 - Emanuele Coradin

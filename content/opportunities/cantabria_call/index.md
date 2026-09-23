@@ -1,4 +1,5 @@
 ---
+status: closed
 title: Predoctoral researcher (PhD student, R1), two-year grant extendable to three years and 6 months to work in the Santander node
 summary: The selected candidate will join the HEP group at University of Cantabria, and the PHINDER project with the goal of collaborating in the development of detailed particle physics simulations concerning the project applications and with emphasis on the proton tomography use case, and the posterior validation and benchmarking of the project applications. 
 date: 2026-08-05

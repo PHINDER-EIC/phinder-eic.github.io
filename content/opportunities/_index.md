@@ -1,9 +1,4 @@
 ---
-title: Job Opportunities
-type: opportunities
+title: Opportunities archive
 ---
-
-Browse open positions related to the PHINDER project below.
-
-
----
+Previous calls from the PHINDER consortium. These positions are no longer open for applications. Visit [Technology](/technology/#opportunities) for recruitment updates.

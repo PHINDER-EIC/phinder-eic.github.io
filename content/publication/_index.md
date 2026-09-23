@@ -1,11 +1,11 @@
 ---
-title: Publications
+title: Relevant background
 cms_exclude: true
-
+aliases:
+- /publications/
 view: citation
-
 banner:
   caption: ''
   image: ''
 ---
-Below is a concise list of relevant publications to the research interests of the PHINDER EIC Consortium. PHINDER members among the authors are indicated in **boldface**:
+Selected background publications relevant to PHINDER’s scientific and technological foundations.

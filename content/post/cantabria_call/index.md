@@ -8,7 +8,11 @@ tags:
   - job opportunity
   - announcement
 featured: false
+status: closed
 ---
+
+**This call is closed.** This announcement is retained as part of the project news archive.
+
 
 The selected candidate will join the HEP group at University of Cantabria, and the PHINDER project with the goal of collaborating in the development of detailed particle physics simulations concerning the project applications and with emphasis on the proton tomography use case, and the posterior validation and benchmarking of the project applications. The position is initially for 2 years (starting date 1 September 2026, subject to administrative constraints) and can be extended up to three years and 6 months reaching the completion of the PhD. The candidate is expected to be based in Santander with frequent short stays at other PHINDER partners (Sweden, Italy, Netherlands, Belgium, Spain) in case they are needed. 
 

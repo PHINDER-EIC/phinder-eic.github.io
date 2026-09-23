@@ -7,9 +7,9 @@ weight: 20
 role: "Hired Researcher"
 role_rank: 3
 organizations:
-- name: "Lulea University of Technology"
+- name: "Luleå University of Technology"
   url: "https://www.ltu.se/en/staff/i/irene-fagnani"
-bio: ""
+bio: "Simulation and training of neural networks for photonic hardware."
 interests: [Neuromorphic Computing]
 education:
   courses: []
@@ -20,6 +20,10 @@ social:
 highlight_name: true
 user_groups:
 - "Hired Researcher"
+portrait: portrait.png
+slug: irene-fagnani
 ---
 
-{style="text-align: justify;"}
+Irene Fagnani is a doctoral student in neuromorphic computing at Luleå University of Technology, supervised by Fredrik Sandin. She develops and trains neural-network models for photonic hardware, addressing differences between ideal models and physical devices, including device variability and ageing. She holds degrees in Mathematical Engineering from Politecnico di Milano.
+
+[Profile and research background](https://www.ltu.se/en/staff/i/irene-fagnani)

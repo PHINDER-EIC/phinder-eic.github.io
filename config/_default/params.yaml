@@ -5,9 +5,9 @@
 
 # Appearance
 appearance:
-  mode: system
+  mode: dark
 #  color: emerald
-  theme_day: minimal
+  theme_day: ''
   theme_night: minimal
   font: native
   font_size: L
@@ -39,9 +39,9 @@ header:
 #    blox: "navbar"
     show_logo: true
     fixed_to_top: true
-    show_day_night: true
+    show_day_night: false
     show_search: true
-    show_theme_chooser: true
+    show_theme_chooser: false
 #    logo:
 #      text: ""
 
@@ -70,9 +70,9 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/PHINDER-EIC/phinder-eic.github.io'
     content_dir: content
-    branch: main
+    branch: master
   avatar:
     gravatar: false
     shape: circle
@@ -104,7 +104,7 @@ features:
 
 extensions:
   cms:
-    branch: main
+    branch: master
     local_backend: false
   academicons:
     enable: true

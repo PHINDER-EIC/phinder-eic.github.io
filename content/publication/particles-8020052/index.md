@@ -1,4 +1,5 @@
 ---
+summary: "Simulations connect time-structured scintillation light with spiking-network estimates of energy, position and shower shape."
 title: Neuromorphic Readout for Hadron Calorimeters
 authors:
 - Enrico Lupi

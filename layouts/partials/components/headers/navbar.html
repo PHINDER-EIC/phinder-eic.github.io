@@ -1,0 +1,18 @@
+<header class="ph-header">
+  <a class="ph-skip" href="#main-content">Skip to content</a>
+  <div class="ph-nav-wrap">
+    <a class="ph-brand" href="/" aria-label="PHINDER home"><img src="/media/phinder-nav.svg" alt="PHINDER" width="300" height="72"></a>
+    <button class="ph-menu-toggle" type="button" aria-expanded="false" aria-controls="ph-navigation">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="ph-navigation" class="ph-nav" aria-label="Main navigation">
+      {{ $page := . }}{{ range site.Menus.main }}
+      {{ $active := eq $page.RelPermalink .URL }}
+      {{ if and (eq .Name "Science") (eq $page.Section "publication") }}{{ $active = true }}{{ end }}
+      {{ if and (eq .Name "Consortium") (in (slice "people" "authors") $page.Section) }}{{ $active = true }}{{ end }}
+      {{ if and (eq .Name "Technology") (eq $page.Section "opportunities") }}{{ $active = true }}{{ end }}
+      {{ if and (eq .Name "News") (eq $page.Section "post") }}{{ $active = true }}{{ end }}
+      <a href="{{ .URL }}" {{ if $active }}class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+      <a href="#" class="js-search ph-search" aria-label="Search the website"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></svg></a>
+    </nav>
+  </div>
+</header>

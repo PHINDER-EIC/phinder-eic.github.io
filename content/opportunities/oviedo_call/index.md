@@ -1,4 +1,5 @@
 ---
+status: closed
 title: Predoctoral researcher (PhD student, R1), four-year grant to work in the Oviedo node
 summary: The selected candidate will join the HEP group at University of Oviedo, and the PHINDER project with the goal of designing and optimising surrogate models and spiking neural models to be implemented in neuromorphic hardware manufactured by the consortium and co-designing said hardware.
 date: 2026-06-01

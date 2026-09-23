@@ -1,4 +1,5 @@
 ---
+summary: "The AIDO framework uses a learned surrogate of simulation and reconstruction for gradient-based exploration of detector designs."
 title: 'End-to-End Detector Optimization with Diffusion Models: A Case Study in Sampling
   Calorimeters'
 authors:

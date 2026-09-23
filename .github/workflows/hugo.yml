@@ -1,19 +1,17 @@
-name: Deploy Hugo site to GitHub Pages
+name: Build and deploy PHINDER
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
+  pull_request:
+    branches: [master]
   workflow_dispatch:
-
-
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -21,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: '0.155.2'
+      HUGO_ENVIRONMENT: production
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,24 +27,38 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: Setup Go for Hugo modules
+        uses: actions/setup-go@v6
+        with:
+          go-version: '1.24.x'
+          cache-dependency-path: go.sum
+
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
-      - name: Build
-        run: hugo --gc --minify
+      - name: Build production site
+        run: hugo --gc --minify --environment production
+
+      - name: Check production links and assets
+        run: python3 scripts/check-site.py public
 
       - name: Upload artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
     needs: build
     steps:

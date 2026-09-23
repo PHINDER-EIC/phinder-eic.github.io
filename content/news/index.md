@@ -8,13 +8,29 @@ sections:
     id: news
     content:
       title: News
-      text: ""
+      text: 'Updates from the PHINDER project and consortium.'
       count: 0
       filters:
         folders:
           - post
     design:
       view: compact
+      columns: '1'
+
+  - block: markdown
+    id: linkedin
+    content:
+      title: LinkedIn
+      text: |-
+        <div class="ph-linkedin-card">
+          <span class="ph-linkedin-mark" aria-hidden="true">in</span>
+          <div>
+            <h3>Follow PHINDER EIC</h3>
+            <p>Research highlights, consortium activities and opportunities from the PHINDER community.</p>
+            <a class="ph-button" href="https://www.linkedin.com/company/123084153/" target="_blank" rel="noopener noreferrer">Visit PHINDER on LinkedIn <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+          </div>
+        </div>
+    design:
       columns: '1'
 
   - block: markdown

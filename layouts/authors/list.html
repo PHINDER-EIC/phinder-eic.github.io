@@ -1,0 +1,54 @@
+{{ define "main" }}
+{{ if or .Params.phinder_role .Params.portrait }}
+<main id="main-content" class="ph-main ph-author-page">
+  <a class="ph-text-link" href="/consortium/#members">← Consortium</a>
+  <header class="ph-author-header">
+    {{ with .Resources.GetMatch "portrait.png" }}{{ $photo := .Resize "480x webp" }}<img class="ph-author-photo" src="{{ $photo.RelPermalink }}" alt="Portrait of {{ $.Title }}" width="{{ $photo.Width }}" height="{{ $photo.Height }}">{{ end }}
+    <div><p class="ph-eyebrow">{{ .Params.phinder_role | default .Params.role }} · PHINDER</p><h1>{{ .Title }}</h1>{{ range .Params.organizations }}<p class="ph-author-affiliation">{{ .name }}</p>{{ end }}<p class="ph-author-summary">{{ .Params.bio }}</p></div>
+  </header>
+  <div class="ph-prose ph-author-prose">{{ .Content }}</div>
+</main>
+{{ else }}
+
+
+{{/* Author profile page. */}}
+
+{{/* If an account has not been created for this user, just display their name as the title. */}}
+{{ if not .File }}
+<div class="universal-wrapper pt-3">
+  <h1>{{ .Title }}</h1>
+</div>
+{{ end }}
+
+<section id="profile-page" class="pt-5">
+  <div class="container">
+    {{/* Show the About block if an account exists for this user. */}}
+    {{/* TODO: remove dependency on v1 blocks. Either migrate to v2 blocks(?) or directly implement layout here. */}}
+    {{ if .File }}
+      {{ $widget := "blocks/v1/about.html" }}
+      {{ $username := (path.Base .File.Dir) }}{{/* Alternatively, use `index .Params.authors 0` */}}
+      {{ $params := dict "wcPage" $ "wcBlock" . "author" $username }}
+      {{ partial $widget $params }}
+    {{end}}
+
+    {{ $query := where .Pages ".IsNode" false }}
+    {{ $count := len $query }}
+    {{ if $count }}
+    <div class="article-widget content-widget-hr">
+      <h3>{{ i18n "user_profile_latest" | default "Latest" }}</h3>
+      <ul>
+        {{ range $query }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+
+
+{{ end }}
+{{ end }}

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Submit Profile
 summary: Submit your team profile for review.
 slug: submit

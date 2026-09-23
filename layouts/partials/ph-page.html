@@ -1,0 +1,35 @@
+<main id="main-content" class="ph-main">
+{{ if .IsHome }}
+<section class="ph-hero" aria-labelledby="hero-title">
+  <img class="ph-hero-art" src="/media/chip-dual-readout.webp" alt="Detector concept with a single row of Y-shaped nanowire triples emitting into InP waveguides, radially aligned photon exchange within two nanowire clusters, and three fibre-optic outputs between flat square electrical contact pads for optical feature extraction and electrical monitoring" width="1536" height="1024" fetchpriority="high">
+  <div class="ph-hero-copy"><h1 id="hero-title">Picosecond<br>intelligence.<br><span>On chip.</span></h1><p class="ph-hero-description">Photonic neuromorphic detection<br>for <em>science, health and industry.</em></p><p class="ph-project-date">EIC Pathfinder Open <span>·</span> 2026–2030</p><a class="ph-button" href="/technology/">Explore the technology <span aria-hidden="true">→</span></a></div>
+  <span class="ph-art-caption">PHOTONIC NEUROMORPHIC DETECTOR CONCEPT</span>
+</section>
+<section class="ph-highlights" aria-label="Project research objectives">
+  <div class="ph-metric"><span class="ph-metric-icon" aria-hidden="true">ϟ</span><div><h2>&lt; 100 ps</h2><p>TEMPORAL RESOLUTION</p></div></div>
+  <div class="ph-metric"><span class="ph-metric-icon" aria-hidden="true">↘</span><div><h2>&lt; 1 fJ/spike</h2><p>ULTRA-LOW ENERGY</p></div></div>
+  <div class="ph-metric"><span class="ph-metric-icon" aria-hidden="true">◎</span><div><h2>III-V NWs + InP</h2><p>HETEROGENEOUS INTEGRATION</p></div></div>
+</section>
+<section class="ph-section" aria-labelledby="cases-title"><div class="ph-section-heading"><h2 id="cases-title">Use cases</h2><span></span><a href="/use-cases/">Explore all use cases <b aria-hidden="true">→</b></a></div>{{ partial "ph-usecases" . }}</section>
+<section class="ph-about ph-section"><div><p class="ph-eyebrow">THE PHINDER PROJECT</p><h2>A new light on<br>intelligent sensing.</h2></div><div><p>The <strong>Picosecond-scale Photonic Heterogeneous Integrated Neuromorphic Detector</strong> will bring optical sensing and on-chip intelligence together in a dynamic photonic sensor array.</p><p>We are co-designing algorithms and hardware to unlock faster, more energy-efficient sensing and imaging.</p><a class="ph-text-link" href="/science/">Discover the science <span aria-hidden="true">→</span></a></div></section>
+<section class="ph-section" aria-labelledby="news-title"><div class="ph-section-heading"><h2 id="news-title">Latest news</h2><span></span><a href="/news/">All updates <b aria-hidden="true">→</b></a></div><div class="ph-news-grid">{{ range first 3 (where site.RegularPages "Section" "post").ByDate.Reverse }}<article class="ph-news-card"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>{{ if eq .Params.status "closed" }}<span class="ph-closed">Closed call</span>{{ end }}<h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><a class="ph-text-link" href="{{ .RelPermalink }}">Read update <span aria-hidden="true">→</span></a></article>{{ end }}</div></section>
+{{ else }}
+<header class="ph-page-intro"><p class="ph-eyebrow">PHINDER / {{ .Title }}</p><h1>{{ .Title }}</h1><p>{{ .Params.intro }}</p></header>
+{{ if eq .Title "Use Cases" }}{{ partial "ph-usecases" . }}{{ end }}
+<div class="ph-prose{{ if .Params.research_page }} ph-research-content{{ end }}">{{ .Content }}</div>
+{{ if eq .Title "Science" }}<section class="ph-section ph-background-section"><div class="ph-section-heading"><h2>Selected research foundations</h2><span></span><a href="/publications/">All relevant background →</a></div><div class="ph-news-grid">{{ range site.Data.research_publications }}{{ with site.GetPage (printf "/publication/%s" .slug) }}<article class="ph-news-card"><time>{{ .Date.Format "2006" }}</time><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Params.summary }}</p><a class="ph-text-link" href="{{ .RelPermalink }}">Read publication →</a></article>{{ end }}{{ end }}</div></section>{{ end }}
+{{ if eq .Title "Consortium" }}
+<section id="members" class="ph-section" aria-labelledby="leadership-title">
+  <div class="ph-section-heading"><h2 id="leadership-title">Principal investigators & project management</h2></div>
+  <div class="ph-people-grid ph-leadership-grid">
+    {{ range sort (where site.Pages "Section" "authors") "Params.leadership_order" }}{{ if .Params.phinder_role }}
+    <a class="ph-person ph-person-lead" href="{{ .RelPermalink }}">
+      {{ with .Resources.GetMatch "portrait.png" }}{{ $photo := .Resize "320x webp" }}<img class="ph-person-photo" src="{{ $photo.RelPermalink }}" alt="" width="{{ $photo.Width }}" height="{{ $photo.Height }}" loading="lazy">{{ end }}
+      <div class="ph-person-info"><p class="ph-person-role">{{ .Params.phinder_role }}</p><h3>{{ .Title }}</h3>{{ range .Params.organizations }}<small>{{ .name }}</small>{{ end }}<p class="ph-person-summary">{{ .Params.bio }}</p><span class="ph-text-link">Profile <span aria-hidden="true">→</span></span></div>
+    </a>{{ end }}{{ end }}
+  </div>
+</section>
+<section class="ph-section" aria-labelledby="team-title"><div class="ph-section-heading"><h2 id="team-title">Researchers & collaborators</h2><span></span><a href="/people/">All profiles →</a></div><div class="ph-people-grid">{{ range where site.Pages "Section" "authors" }}{{ if and .Params.user_groups (not .Params.phinder_role) }}<a class="ph-person" href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3><p>{{ .Params.role }}</p>{{ range .Params.organizations }}<small>{{ .name }}</small>{{ end }}</a>{{ end }}{{ end }}</div></section>
+{{ end }}
+{{ end }}
+</main>

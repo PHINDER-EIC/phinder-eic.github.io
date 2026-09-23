@@ -1,0 +1,62 @@
+neuron:
+  title: A neuron built from semiconductor nanowires
+  kind: micrograph
+  image: /media/research/nature_2026_nanowire_neuron_micrograph.png
+  width: 440
+  height: 550
+  alt: False-colour electron micrograph of a nanowire-neuron circuit with two InP nanowire LEDs at the top, two photodiode inputs in the centre, a shared gate and an InAs nanowire field-effect transistor at the bottom; scale bar one micrometre.
+  caption: A nanoscale optoelectronic neuron combines InP nanowire light emitters and photodetectors with an InAs nanowire field-effect transistor.
+  credit: "Micrograph courtesy of Anders Mikkelsen and colleagues. Related publication:"
+  paper: Sestoft et al., Nature Communications 17, 4798 (2026).
+  source: https://doi.org/10.1038/s41467-026-71446-4
+optical-link:
+  title: Direct on-chip optical communication
+  kind: published
+  image: /media/research/on_chip_optical_communication_fig1.jpg
+  width: 797
+  height: 516
+  alt: Four-panel published figure showing optical broadcasting between emitter and receiver, a two-nanowire circuit, a false-colour electron micrograph with scale bars, and measured current-voltage response.
+  caption: From an optical link to a fabricated device. The published figure brings together the broadcasting principle, nanowire circuit, microscopy and electrical characterisation.
+  credit: Figure 1 from
+  paper: Flodgren et al., ACS Photonics (2025).
+  source: https://doi.org/10.1021/acsphotonics.4c01375
+  license: true
+calorimeter:
+  title: Neuromorphic calorimeter readout
+  kind: redraw
+  image: /media/research/calorimeter-explainer.webp
+  width: 1536
+  height: 1024
+  alt: Explanatory diagram of scintillation light passing through a detector array into an optical spiking network and a prediction output, with an enlarged view of detector channels.
+  caption: A proposed calorimeter readout converts scintillation light into signals for a layered optical spiking network. This is an explanatory concept, not a photograph of a completed PHINDER detector.
+  credit: Simplified AI-assisted redraw of Figure 12 from
+  paper: Lupi et al., Particles (2025).
+  source: https://doi.org/10.3390/particles8020052
+  license: true
+  original: /media/research/calorimeter_neuromorphic_readout_fig12.png
+inp-network:
+  title: Scaling to multilayer photonic networks
+  kind: redraw
+  image: /media/research/inp-network-explainer.webp
+  width: 1536
+  height: 1024
+  alt: Simplified multilayer photonic network with wavelength channels passing through weights, summation and nonlinear stages, and optical fan-out connecting successive layers.
+  caption: Wavelength channels, weighted connections and nonlinear stages form a route to multilayer InP photonic networks. The architecture is simplified here to show the signal flow.
+  credit: Simplified AI-assisted redraw of Figure 1 from
+  paper: Shi, Calabretta and Stabile, APL Photonics (2022).
+  source: https://doi.org/10.1063/5.0066350
+  license: true
+  original: /media/research/inp_photonic_multilayer_nn_architecture_fig1.png
+codesign:
+  title: Hardware and algorithms developed together
+  kind: redraw
+  image: /media/research/codesign-explainer.webp
+  width: 1536
+  height: 1024
+  alt: Iterative workflow from a parameter generator through parallel detector simulations and reconstruction to a trained surrogate and optimiser, which feeds new parameters back to the generator.
+  caption: A learned surrogate emulates the simulation and reconstruction chain, enabling fast gradient evaluation as an optimiser proposes the next design parameters.
+  credit: Simplified AI-assisted redraw of Figure 2 from
+  paper: Schmidt et al., Particles (2025).
+  source: https://doi.org/10.3390/particles8020047
+  license: true
+  original: /media/research/aido_workflow_fig2.png

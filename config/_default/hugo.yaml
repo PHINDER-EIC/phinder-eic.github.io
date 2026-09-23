@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: PHINDER EIC Project # Website name
-baseURL: "https://phinder-eic.github.io" # Website URL
+baseURL: "https://phinder-eic.github.io/" # phinder-eic.eu forwards here; keep until a domain migration.
 
 ############################
 ## LANGUAGE
@@ -31,9 +31,9 @@ footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
   authors: '/author/:slug/'
-disableAliases: true
+disableAliases: false
 outputs:
-  home: [HTML, RSS, headers, redirects]
+  home: [HTML, RSS, JSON, headers, redirects]
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
