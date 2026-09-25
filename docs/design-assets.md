@@ -75,4 +75,6 @@ The publication collection and both BibTeX files now contain exactly seven user-
 
 ## Optical and electrical readout
 
-The current shared illustration is `static/media/chip-dual-readout.webp`. The packaged output IC is replaced by two banks of flat square electrical contact pads and three central fibre-optic outputs. The fibres represent extraction of dimension-reduced features; the contact pads support electrical monitoring of chip behaviour. The thin wafer and other optical structures are retained. Prompt: `docs/chip-optical-electrical-output-prompt.md`.
+The landing-page illustration is `static/media/chip-poster-original-waves.webp`. It preserves the original transparent chip artwork embedded in `PHINDER_rollup_v1.pptx` and places it unchanged over a new wide light-wave background inspired by the poster. Prompt and provenance: `docs/chip-poster-original-waves-prompt.md`. The preceding interpretation remains available as `static/media/chip-rollup-guided.webp` for rollback.
+
+The previous `static/media/chip-dual-readout.webp` remains available as a rollback asset. Its output IC was replaced by two banks of flat square electrical contact pads and three central fibre-optic outputs. Prompt: `docs/chip-optical-electrical-output-prompt.md`.
