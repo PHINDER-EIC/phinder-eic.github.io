@@ -75,6 +75,8 @@ The publication collection and both BibTeX files now contain exactly seven user-
 
 ## Optical and electrical readout
 
-The landing-page illustration is `static/media/chip-poster-original-waves.webp`. It preserves the original transparent chip artwork embedded in `PHINDER_rollup_v1.pptx` and places it unchanged over a new wide light-wave background inspired by the poster. Prompt and provenance: `docs/chip-poster-original-waves-prompt.md`. The preceding interpretation remains available as `static/media/chip-rollup-guided.webp` for rollback.
+The landing-page illustration is `static/media/chip-dual-contact-segmented-ring-hero.webp`. It preserves the transparent device geometry from `~/Downloads/PHINDER_image4_dual_contact_segmented_ring_complete.png`, including the dual-contact segmented rings, waveguide network and contact pads, and composites it over a new optical-pulse background. Prompt and provenance: `docs/chip-dual-contact-segmented-ring-prompt.md`.
+
+The preceding landing-page illustration remains unchanged as `static/media/chip-poster-original-waves.webp` for review or rollback. Its prompt and provenance remain in `docs/chip-poster-original-waves-prompt.md`. The earlier interpretation is retained as `static/media/chip-rollup-guided.webp`.
 
 The previous `static/media/chip-dual-readout.webp` remains available as a rollback asset. Its output IC was replaced by two banks of flat square electrical contact pads and three central fibre-optic outputs. Prompt: `docs/chip-optical-electrical-output-prompt.md`.
