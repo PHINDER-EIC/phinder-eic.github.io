@@ -37,6 +37,7 @@ button { font:inherit; }
 .ph-highlights { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
 .ph-metric { border:1px solid var(--ph-line); border-radius:5px; background:linear-gradient(115deg,#0b162deb,#060e23); padding:25px 22px; display:flex; align-items:center; gap:20px; }
 .ph-metric-icon { border:1px solid #b76bfa; width:65px; height:65px; border-radius:50%; display:grid; place-items:center; font-size:42px; color:#ce99ff; box-shadow:0 0 12px #a34dff40,inset 0 0 15px #a34dff15; flex-shrink:0; }
+.ph-metric-icon svg { width:39px; height:39px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; filter:drop-shadow(0 0 4px #b35cff80); }
 .ph-metric>div { border-left:1px solid var(--ph-line); padding-left:20px; }
 .ph-metric h2 { font-size:25px; letter-spacing:-.6px; margin:0 0 6px; color:#efdaff; font-weight:600; }
 .ph-metric p { font-size:9px; letter-spacing:2px; margin:0; color:#d0bddf; }
