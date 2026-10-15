@@ -1,6 +1,6 @@
 # PHINDER people profiles
 
-Updated 22 September 2026 for local review. Roles supplied by the project coordinator: Fredrik Sandin (coordinator), Tommaso Dorigo (WP1), Wolfger Peelaers (WP2), Anders Mikkelsen (WP3), Patty Stabile (WP4), Pablo Martínez Ruiz del Árbol (WP5), Pietro Vischia (WP6), Lama Alkhaled (project manager).
+Updated 15 October 2026 for local review. Roles supplied by the project coordinator: Fredrik Sandin (coordinator), Tommaso Dorigo (WP1), Wolfger Peelaers (WP2), Anders Mikkelsen (WP3), Patty Stabile (WP4), Pablo Martínez Ruiz del Árbol (WP5), Pietro Vischia (WP6), Lama Alkhaled (project manager).
 
 Each author page links its biographical sources. Wolfger's optical-computing publication and Stony Brook dissertation substantiate the summary; the supplied claims about prior postdoctoral appointments and quantum optical processing were omitted because they were not independently confirmed. Pietro's existing profile was retained in substance and aligned with his current research homepage. Lama's university profile confirms her institutional affiliation and project-management role; public LinkedIn posts provided additional context and a portrait because the main LinkedIn profile blocked automated access.
 
@@ -45,3 +45,7 @@ Original portraits:
 Portrait backgrounds were removed with the built-in imagegen tool, preserving the source faces, clothing and poses. Original downloads are in `.local-dev/collaborators/`.
 
 Edit prompt: Remove only the background from this real person’s photograph. Preserve exactly the original face, expression, glasses, hairstyle, pose and clothing. No beautification, no changed features, no invented anatomy. Keep the original crop if the head is already cropped. Output a clean photographic cutout on genuine transparent RGBA alpha, NOT a white or checkerboard background. Remove scenery around hair and shoulders carefully, no halos, no added shadows. Head and upper torso composition suitable for a professional research profile.
+
+## Carlo Gulizia
+
+Carlo's profile uses the University of Oviedo research portal for his department, research area and institutional affiliation, and Pietro Vischia's research homepage for the PHINDER doctoral topic. The supplied source photograph is `/home/fs/Downloads/Carlo.jpeg`. The background, chair, microphone and surrounding objects were removed with the built-in image-editing workflow; the final 600 × 600 transparent `avatar.png` and `portrait.png` files preserve his original formal clothing and three-quarter pose.
